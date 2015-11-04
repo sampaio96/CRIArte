@@ -1,0 +1,53 @@
+html, body { background-color: transparent; margin: 0px; overflow: hidden; cursor: move; }
+
+#container { z-index: 3; }
+
+#en { display: none; }
+
+.modern { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; width: 100%; height: 100%; position: fixed; top: 40; left: 0; z-index: 56; }
+
+.love { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; color: #fff6f8; font-family: "Futura", 'Futura', Futura, "Avenir", 'Avenir', Avenir; sans-serif }
+
+.title { font-size: 2.5em;  font-weight: 900; margin-bottom: 1em; margin-top: 0.3em; font-style: italic; font
+  display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
+  -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center;
+  -webkit-flex-direction: column; flex-direction: column; }
+
+.small { display: none; }
+
+.subtitle { font-size: 0.7em; letter-spacing: 0.3em; margin-bottom: 0em; text-transform: uppercase; }
+
+.para { font-size: 1.5em; font-weight: lighter; margin-bottom: 1.5em; }
+
+.outside { font-size: 1em; padding-bottom: 0.2em; border-bottom: 0.2em #fff6f8 solid; margin-top: 1em; margin-bottom: 1em; }
+
+a, a:link, a:hover, a:active, a:visited { text-decoration: none; color: #fff6f8; }
+
+
+/* Change C R I A to CRIArte*/
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+  .big { display: none; }
+  
+  .small { display: block; }
+
+  .L { display: none; }
+}
+
+/* Remove background */
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: portrait) {
+  html, body { overflow: scroll; background: #f7c6d0; background: -moz-linear-gradient(top, #f7c6d0 0%, #f38198 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7c6d0), color-stop(100%, #f38198)); background: -webkit-linear-gradient(top, #f7c6d0 0%, #f38198 100%); background: -o-linear-gradient(top, #f7c6d0 0%, #f38198 100%); background: -ms-linear-gradient(top, #f7c6d0 0%, #f38198 100%); background: linear-gradient(to bottom, #f7c6d0 0%, #f38198 100%); }
+  
+  #container { visibility: hidden; height: 0%; }
+  
+  .modern { position: relative; width: auto; height: auto; margin-top: 10%; top: 0; bottom: 10;}
+  
+  .title { font-size: 3em; margin-bottom: 0.6em; margin-top: 0;}
+
+  .subtitle { font-size: 0.8em; }
+
+  .para { font-size: 1em; width: 80%; margin-left: 10%; margin-right: 10%;  }
+
+  .outside { margin-top: 0; }
+
+  .L { display: block; }
+}
